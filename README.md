@@ -16,3 +16,8 @@ Considere um cenário em que um modelo preditivo está sendo implantado para aux
 Em outras palavras, os médicos priorizam alcançar uma alta taxa de recall. Esta ênfase na recordação vem, naturalmente, com o compromisso de potencialmente mais previsões falso-positivas, reduzindo a precisão do modelo. Este é um risco que os médicos estão dispostos a correr porque o custo de um câncer não detectado é muito mais elevado do que o custo de novos testes de diagnóstico. Consequentemente, quando se trata de decidir se deve ou não classificar um paciente como tendo câncer, pode ser mais benéfico classificá-lo como positivo para câncer quando a estimativa da probabilidade condicional é muito inferior a 0,5.
 
 Uma solução para resolver o problema declarado na introdução é ajustar o limite de decisão do classificador assim que o modelo for treinado.
+
+Esse notebook apresenta três técnicas para ajustar o threshold:
+* Um método personalizado
+* TunedThresholdClassifierCV
+* FixedThresholdClassifier
